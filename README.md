@@ -1,3 +1,24 @@
+# Notes:
+
+HTML & CSS => 
+- I reckon using grid for the overall display and flex inside each element if we need to (a grid wrap for the whole page)
+- I think with a simple grid-template-area we can change the display into the mobile version fairly easily with media-query
+- In this case there would not be a section for each block (each line) but a section for each square
+- From what I've seen people always use lists with '< ul >' and '< li >' for navbar links
+              
+Questions: 
+- Do we do mobile first or desktop first?
+- Do we divide the page into two and we each work on it? Like halfway? 
+           
+Let me know if you have another idea for the project.
+MOO
+           
+           
+           
+           
+//---------------------------------------------------
+
+
 # Frontend Mentor - Sunnyside agency landing page
 
 ![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
