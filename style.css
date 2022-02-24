@@ -1,22 +1,226 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 *{
       margin: 0;
       padding: 0;
-
 }
+a {
+      text-decoration: none;
+      color: black;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+}
+
+.main-wrapper {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-rows: 70vh repeat(3, 50vh) 60vh 40vh 40vh;
+
+      grid-template-areas: 
+      "banner banner"
+      "section2 section3"
+      "section4 section5"
+      "section6 section7"
+      "section8 section8"
+      "section9 section9"
+      "section10 section10";
+}
+
 .banner{
-      height: 100vh;
+      grid-area: banner;
       background-image: url(./images/desktop/image-header.jpg);
       background-position: center bottom;
       background-size: cover;
+      color: white;
+      position: relative;
 }
 
 .nav{
       display: flex;
       justify-content: space-between;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding: 1.4rem; 
+}
 
+ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+}
+
+li {
+      cursor: pointer;
+}
+
+.contact {
+      color: black;
+      background-color: white;
+      padding: 8px 12px;
+      border-radius: 15px;
+      font-size: 0.7rem;
+      font-weight: 600;
+}
+
+h1 {
+      font-size: 2.2rem;
+      letter-spacing: 5px;
+      text-align: center;
+      margin-top: 3rem;
+}
+
+h2 {
+      font-size: 2rem;
+}
+
+.arrow-down {
+      width: 25px;
+      display: block;
+      top: 45%;
+      left: 50%;
+      position: absolute;
+}
+
+.section-wrap {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 1.5rem;
+}
+
+.section-wrap2 {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 1.2rem;
+      padding-bottom: 2rem;
+}
+
+.section2 { 
+      grid-area: section2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.section3 { 
+      grid-area: section3;
+      background-image: url(./images/desktop/image-transform.jpg);
+      background-position: center;
+      background-size: cover;
+}
+
+.section4 { 
+      grid-area: section4;
+      background-image: url(./images/desktop/image-stand-out.jpg);
+      background-position: center;
+      background-size: cover;
+}
+
+.section5 { 
+      grid-area: section5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.section6 { 
+      grid-area: section6;
+      background-image: url(./images/desktop/image-graphic-design.jpg);
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+}
+
+.section7 { 
+      grid-area: section7;
+      background-image: url(./images/desktop/image-photography.jpg);
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+}
+
+.section8 { 
+      grid-area: section8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.section-wrap-testimonials {
+      width: 85%;
+      margin: 0 auto;
+}
+
+.section-wrap-testimonials > h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+}
+
+.sub-section-test {
+      display: flex;
+      flex-direction: row;
+      gap: 1.6rem;
+}
+
+.testimonial {
+      text-align: center;
+      line-height: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+}
+
+.testimonial > div > img {
+      border-radius: 50%;
+      max-width: 80px;
+}
+
+.test-name {
+      font-weight: 600;
+}
+
+.section9 { 
+      grid-area: section9;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+}
+
+.section9 > img {
+      width: 100%;
+      height: auto;
+      overflow: auto;
+}
+
+.section10 { 
+      grid-area: section10;
+      background-color: rgba(144,212,197,255);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+}
+
+.section10 > ul {
+      gap: 2rem;
+}
+
+.ext-links {
+      margin-top: 2.5rem;
+}
+
+.ext-links > img {
+      padding: 0 0.8rem;
+      cursor: pointer;
 }
