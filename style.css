@@ -11,8 +11,14 @@ a {
       text-transform: uppercase;
 }
 
+
+p{
+      font-family: 'Barlow', sans-serif ;
+      color:hsl(210, 4%, 67%);
+}
+
 .main-wrapper {
-      max-width: 1040px;
+      max-width: 1440px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 0.5fr 0.5fr;
@@ -65,14 +71,27 @@ li {
 }
 
 h1 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       letter-spacing: 5px;
       text-align: center;
       margin-top: 3rem;
+      font-family: 'Fraunces', serif;
 }
 
 h2 {
       font-size: 2rem;
+      font-family: 'Fraunces', serif;
+}
+
+.section-wrap-testimonials h2{
+      font-family: 'Fraunces', serif;
+      color:hsl(210, 4%, 67%);
+}
+
+.test-name{
+      color: black;
+      font-family:'Fraunces', serif;
+      font-size: 1.3rem;
 }
 
 .arrow-down {
@@ -91,13 +110,34 @@ h2 {
       gap: 1.5rem;
 }
 
+.section-wrap h2{
+      margin-bottom: 30px;
+}
+
+.section-wrap p{
+      margin-bottom: 20px;
+}
+
+
+
 .section-wrap2 {
-      width: 60%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       text-align: center;
       gap: 1.2rem;
-      padding-bottom: 2rem;
+      padding-bottom: 5rem;
+}
+
+.section-wrap2 p{
+
+      color: hsl(167, 40%, 24%);
+      
+}
+
+.section10 li{
+      color: hsl(168, 34%, 41%);
+      padding-inline: 30px;
 }
 
 .section2 { 
@@ -155,6 +195,12 @@ h2 {
       align-items: center;
 }
 
+.section-wrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
 .section-wrap-testimonials {
       width: 85%;
       margin: 0 auto;
@@ -224,3 +270,148 @@ h2 {
       padding: 0 0.8rem;
       cursor: pointer;
 }
+
+.hamburger{
+      display: none;
+}
+
+@media screen and (max-width: 414px) {
+
+      html, body{
+            overflow-x: hiden;
+      }
+
+      .nav-bar{
+            display: none;
+      }
+
+      .nav-hamburger{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+            
+      }
+
+      .hamburger-menu ul{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            
+            font-size: 40px;
+            height: auto;
+            width: 200px;
+            min-width: min-content;
+            position: absolute;
+            right: 4%;
+            margin-top: 20px;
+            padding: 20px 0
+            
+
+      
+      }
+
+      .hamburger{
+            display: block;
+           
+      }
+
+      .hamburger-menu ul li a{
+            color: hsl(210, 4%, 67%);
+            
+          
+      }
+
+      li{
+            
+            
+      }
+
+      .hamburger-menu .contact-hamburger{
+
+      color: black;
+      background-color: white;
+      padding: 8px 12px;
+      border-radius: 15px;
+      font-size: 0.7rem;
+      font-weight: 600;
+
+      }
+      
+
+      
+
+      
+
+      .main-wrapper {
+            
+            max-width: 100vw;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 0.5fr;
+            grid-template-rows: 80vh repeat(3, 70vh) 100vh 100vh 100vh;
+      
+            grid-template-areas: 
+            "banner" 
+            "section3" 
+            "section2"
+            "section4" 
+            "section5"
+            "section6" 
+            "section7"
+            "section8"
+            "section9"
+            "section10";
+      
+}
+
+.sub-section-test{
+      display: flex;
+      flex-direction: column;
+      flex: wrap;
+}
+
+.section9{
+      display: grid;
+      grid-area: "section9" "section9"
+                  "section9" "section9";
+      grid-template-columns: auto auto;
+         
+}
+
+.title-wrap{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+h1{
+      letter-spacing: 20px;
+      inline-size: 400px;
+      padding: 10px;
+}
+
+.arrow-down{
+      position: relative;
+      text-align: center;
+}  
+
+.section-wrap-testimonials{
+
+      margin-top: 40px;
+}
+
+.section10 .logo{
+      margin-top: 60px;
+     
+}
+
+.ext-links{
+      margin-bottom: 30px;
+}
+
+.section2{
+      margin-top: 10px;
+}
+}
+
