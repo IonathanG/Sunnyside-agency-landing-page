@@ -1,5 +1,12 @@
 # Notes:
 
+CHANGES MADE:
+- ADDED MEDIA QUERY FOR MOBILE SCREEN (MAX-WIDTH: 414PX) IN STYLE.CSS
+- INDEX.JS CREATED FOR HAMBURGER MENU IN MOBILE VIEW
+- MADE MINOR STYLING CHANGES IN STYLE.CSS => ADDED FONT-FAMILY, ADJUSTED TEXT COLORS.
+
+
+
 HTML & CSS => 
 - I reckon using grid for the overall display and flex inside each element if we need to (a grid wrap for the whole page)
 - I think with a simple grid-template-area we can change the display into the mobile version fairly easily with media-query
